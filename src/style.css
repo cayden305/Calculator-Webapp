@@ -1,0 +1,106 @@
+:root {
+    --textcolor: #bcd5d5;
+    --backgroundcolor: #4c7070;
+    --bodybackgroundcolor: #2F4F4FFF;
+    --darkerbackgroundcolor: #1c3030;
+    --buttoncolor: #c0dfdf;
+    --buttoncolor2: #d3e3e3;
+    --buttoncoloractive: #9bb1b1;
+    --buttoncoloractive2: #697878;
+    --footercolor: #000000;
+}
+
+body {
+    background: var(--bodybackgroundcolor);
+}
+
+.FlexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeaderStyle {
+    width: 20%;
+    height: auto;
+    padding: 1vh;
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 2vh;
+    background-color: var(--backgroundcolor);
+    color: var(--textcolor);
+    font-family: "Segoe UI";
+}
+
+.HeaderStyle p {
+    font-size: 2.5vh;
+}
+
+.Container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Calculator {
+    margin: 15px;
+    border-radius: 2vh;
+    padding: 15px;
+    background-color: var(--backgroundcolor);
+    border: 2px solid var(--darkerbackgroundcolor);
+}
+
+.Calculator button {
+    width: 5vh;
+    height: 5vh;
+    font-size: 1.5vh;
+    font-weight: bold;
+    border: 2px solid var(--darkerbackgroundcolor);
+    outline: none;
+    border-radius: 1vh;
+    background-color: var(--buttoncolor);
+    cursor: pointer;
+}
+
+.Calculator button:hover {
+    background-color: var(--buttoncoloractive);
+}
+
+.Calculator button:active {
+    transition: 0.1s;
+    border-radius: 1.2vh;
+    background-color: var(--buttoncoloractive2)
+}
+
+.Calculator input {
+    font-size: 1.65vh;
+    width: 20.4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    pointer-events: none;
+    border: 2px solid var(--darkerbackgroundcolor);
+    background-color: var(--buttoncolor2);
+    overflow: auto;
+}
+
+.FooterStyle {
+    width: 20%;
+    padding: 1.5vh;
+    font-size: 2vh;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    text-align: center;
+    background-size: 2vh;
+    background-color: var(--backgroundcolor);
+    border-radius: 2vh;
+    color: var(--textcolor);
+}
+
+.FooterStyle a, a:visited {
+    color: var(--textcolor);
+}
+
+.FooterStyle a:hover {
+    color: var(--buttoncoloractive);
+}
